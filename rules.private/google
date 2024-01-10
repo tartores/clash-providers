@@ -1,5 +1,5 @@
+# Google service.
 payload:
-  # 内容：YouTube
   - DOMAIN-SUFFIX,ggpht.cn
   - DOMAIN-SUFFIX,ggpht.com
   - DOMAIN-SUFFIX,googlevideo.com
