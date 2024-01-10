@@ -1,12 +1,16 @@
 {
   // 配置与语言的文件关联的 [glob patterns](https://aka.ms/vscode-glob-patterns)(例如“*.extension”:“html”)。如果模式包含路径分隔符，则模式将在文件的绝对路径上匹配，否则将匹配文件的名称。它们优先于安装的语言的默认关联。
   "files.associations": {
-    "**/{-,.bkp,rules,rules.*}/**/*": "yaml",
+    "**/{-,.bkp,rules,rules.*}/**/*": "yaml"
   },
   "files.autoGuessEncoding": true,
-  "files.defaultLanguage": "yaml",
+  // "files.defaultLanguage": "yaml",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true
+  },
   // A list of URLs or local paths to CSS style sheets to use from the Markdown preview. Relative paths are interpreted relative to the folder open in the Explorer. If there is no open folder, they are interpreted relative to the location of the Markdown file. All '\' need to be written as '\\'.
   "markdown.styles": [
     ".vscode/markdownhere.css"
-  ],
+  ]
 }
